@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+</head>
+<body>
+
+    <div class="navbar" id="NavBar">
+        <div class="navlogo">
+            <a href="" onclick="reload()"> <img class="nav_logo" src="NewsLogR.png" alt=""></a>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li class="hover_link nav_list_items" id="Entertainment" onclick="onNavBarClickItem('Entertainment')">Entertainment</li>
+                <li class="hover_link nav_list_items" id="Sports" onclick="onNavBarClickItem('Sports')">Sports</li>
+                <li class="hover_link nav_list_items" id="Politics" onclick="onNavBarClickItem('Politics')">Politics</li>
+            </ul>
+        </div>
+        <div class="search_box">
+            <input type="text" id="search_bar" placeholder="     e.g. Science">
+            <button class="btn" id="searchBtn">Search</button>
+
+        </div>
+    </div>
+
+    <main>
+        <div class="card_container" id="card_container_id">
+            
+        </div>
+
+    </main>
+
+    <template id ="card_id">
+        <div class="card">
+            <div class="card_img" ><img src="https://via.placeholder.com//400x200" alt="img_id" id="img_card"></div>
+            <div class="card_content">
+                <h3 class="title" id="news_title">this is title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <h6 class="date" id="news_date">Date:12/2/2003</h6>
+                <br>
+                <p class="para" id="news_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ab quod assumenda unde cupiditate ea molestiae. Pariatur asperiores soluta rem!</p>
+            </div>
+        </div>
+    </template>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
